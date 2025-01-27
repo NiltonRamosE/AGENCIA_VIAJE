@@ -9,23 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("reservation-form");
 
   form.addEventListener("submit", (event) => {
-      event.preventDefault();
+    event.preventDefault();
 
-      const origen = document.getElementById("input-origen").value.trim();
-      const destino = document.getElementById("input-destino").value.trim();
-      const fecha = document.getElementById("input-fecha").value;
+    const origen = document.getElementById("input-origen").value.trim();
+    const destino = document.getElementById("input-destino").value.trim();
+    const fecha = document.getElementById("input-fecha").value;
 
-      if (!origen || !destino || !fecha) {
-          alert("Por favor, completa todos los campos.");
-          return;
-      }
+    if (!origen || !destino || !fecha) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
 
-      if (origen === destino) {
-          alert("El origen y el destino no pueden ser iguales.");
-          return;
-      }
+    if (origen === destino) {
+      alert("El origen y el destino no pueden ser iguales.");
+      return;
+    }
 
-      alert(`Reserva confirmada:\nOrigen: ${origen}\nDestino: ${destino}\nFecha: ${fecha}`);
-
+    alert(
+      `Reserva confirmada:\nOrigen: ${origen}\nDestino: ${destino}\nFecha: ${fecha}`
+    );
   });
 });
