@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>América Express</title>
+    <title>America Express</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="../img/logo.png" alt="América Express Logo" title="Logo de América Express">
-                    </a>
+    <header id="home" class="header">
+        <nav class="header__nav-bar">
+            <a href="#home" class="header__logo">
+                <img class="nav-bar__logo" src="../img/logo.png" alt="America Express Logo" title="Logo de America Express">
+            </a>
+            <button class="header__toggle" aria-label="Toggle navigation menu" hidden>
+                <span class="header__toggle-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </span>
+            </button>
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link" href="#about">Sobre Nosotros</a>
                 </li>
-                <li>
-                    <a href="#">
-                        Reseñas
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Sobre Nosotros
-                    </a>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link" href="#contact">Contacto</a>
                 </li>
             </ul>
         </nav>
-        <div>
-            <img src="../img/banner-de-inicio_bus.png" alt="banner-bus" title="Banner de bus América">
+        <div class="header__banner">
+            <img class="header__banner-image" src="../img/banner-de-inicio_bus.png" alt="banner-bus" title="Banner de bus America">
         </div>
-    </header>
-    <main>
-        <article>
-            <div>
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Origen">
-                        <input type="text" placeholder="Destino">
-                        <input type="date">
-                    </div>
-                </form>
-            </div>
-        </article>
+    </header>    
+
+    <main class="main">
+        
+        <section class="search">
+            <form class="search__form" action="">
+                <div class="search__fields">
+                    <datalist id="origen">
+                        <option value="Lima"></option>
+                        <option value="Chimbote"></option>
+                    </datalist>
+                    <input class="search__input" list="origen" name="origen" placeholder="Origen"></input>
+                    
+                    <datalist id="destino">
+                        <option value="Lima"></option>
+                        <option value="Chimbote"></option>
+                    </datalist>
+                    <input class="search__input" list="destino" placeholder="Destino">
+                    
+                    <input class="search__input" type="date">
+                    <button class="search__button" type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="review" class="review">
+            
+        </section>
+
+        <section id="about" class="about">
+            <!-- Sección "Sobre Nosotros" -->
+        </section>
+
+        <section id="contact" class="contact">
+            <!-- Sección de contacto -->
+        </section>
     </main>
 
-    <footer>
-        <p>Nilton Ramos Encarnacion - Todos los derechos reservados</p>
+    <footer class="footer">
+        <p class="footer__text">Nilton Ramos Encarnacion - Todos los derechos reservados</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
