@@ -9,18 +9,23 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="home" class="header">
         <nav class="header__nav-bar">
             <a href="#home" class="header__logo">
-                <img class="nav-bar__logo" src="../img/logo.png" alt="America Express Logo" title="Logo de America Express">
+                <img class="nav-bar__logo" src="../img/logo.png" alt="America Express Logo"
+                    title="Logo de America Express">
             </a>
             <button class="header__toggle" aria-label="Toggle navigation menu" hidden>
                 <span class="header__toggle-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
                 </span>
             </button>
             <ul class="nav-bar__list">
@@ -33,12 +38,13 @@
             </ul>
         </nav>
         <div class="header__banner">
-            <img class="header__banner-image" src="../img/banner-de-inicio_bus.png" alt="banner-bus" title="Banner de bus America">
+            <img class="header__banner-image" src="../img/banner-de-inicio_bus.png" alt="banner-bus"
+                title="Banner de bus America">
         </div>
-    </header>    
+    </header>
 
     <main class="main">
-        
+
         <section class="search">
             <form class="search__form" action="">
                 <div class="search__fields">
@@ -47,13 +53,13 @@
                         <option value="Chimbote"></option>
                     </datalist>
                     <input class="search__input" list="origen" name="origen" placeholder="Origen"></input>
-                    
+
                     <datalist id="destino">
                         <option value="Lima"></option>
                         <option value="Chimbote"></option>
                     </datalist>
                     <input class="search__input" list="destino" placeholder="Destino">
-                    
+
                     <input class="search__input" type="date">
                     <button class="search__button" type="submit">Buscar</button>
                 </div>
@@ -61,15 +67,89 @@
         </section>
 
         <section id="review" class="review">
-            
+            <h2 class="review__title">Reseñas de nuestros clientes</h2>
+            <div class="review__list">
+                <div class="review__item">
+                    <img class="review__photo" src="https://unavatar.io/x/sylveemhm" alt="Foto de María López">
+                    <div class="review__content">
+                        <p class="review__text">"El servicio de America Express es increíble, siempre puntual y seguro."
+                        </p>
+                        <p class="review__author">- María López</p>
+                    </div>
+                </div>
+                <div class="review__item">
+                    <img class="review__photo" src="https://unavatar.io/x/TheDaarick28" alt="Foto de Carlos Rivera">
+                    <div class="review__content">
+                        <p class="review__text">"Viajar con ellos siempre es cómodo, los recomiendo totalmente."</p>
+                        <p class="review__author">- Carlos Rivera</p>
+                    </div>
+                </div>
+                <div class="review__item">
+                    <img class="review__photo" src="https://unavatar.io/x/midudev" alt="Foto de Ana Torres">
+                    <div class="review__content">
+                        <p class="review__text">"Excelente atención al cliente, me ayudaron mucho con mi itinerario."
+                        </p>
+                        <p class="review__author">- Juan Rodriguez</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="about" class="about">
-            <!-- Sección "Sobre Nosotros" -->
+            <h2 class="about__title">Sobre Nosotros</h2>
+            <div class="about__content">
+                <img class="about__image" src="https://unavatar.io/x/midudev" alt="Nuestro equipo en acción">
+                <div class="about__details">
+                    <p class="about__text">
+                        En <strong>America Express</strong>, nos comprometemos a ofrecer servicios de transporte de alta
+                        calidad para nuestros
+                        clientes. Con más de <strong>20 años de experiencia</strong> en la industria, garantizamos
+                        seguridad, puntualidad y comodidad en cada viaje.
+                    </p>
+                    <p class="about__text">
+                        Nuestra misión es <em>conectar a las personas con sus destinos</em> mientras brindamos una
+                        experiencia excepcional. ¡Confía en nosotros para tu próximo viaje!
+                    </p>
+                    <ul class="about__features">
+                        <li class="about__feature">
+                            <span class="about__icon">🚍</span>
+                            Flota moderna y segura
+                        </li>
+                        <li class="about__feature">
+                            <span class="about__icon">⏱️</span>
+                            Puntualidad garantizada
+                        </li>
+                        <li class="about__feature">
+                            <span class="about__icon">😊</span>
+                            Atención al cliente 24/7
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <!-- Sección de contacto -->
+            <h2 class="contact__title">Contáctanos</h2>
+            <p class="contact__description">
+                ¿Tienes preguntas o comentarios? Completa el formulario y nos pondremos en contacto contigo lo antes
+                posible.
+            </p>
+            <form class="contact__form">
+                <div class="contact__group">
+                    <label for="name" class="contact__label">Nombre:</label>
+                    <input type="text" id="name" class="contact__input" placeholder="Tu nombre" required>
+                </div>
+                <div class="contact__group">
+                    <label for="email" class="contact__label">Correo Electrónico:</label>
+                    <input type="email" id="email" class="contact__input" placeholder="Tu correo" required>
+                </div>
+                <div class="contact__group">
+                    <label for="message" class="contact__label">Mensaje:</label>
+                    <textarea id="message" class="contact__textarea" placeholder="Tu mensaje" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="contact__button">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
 
