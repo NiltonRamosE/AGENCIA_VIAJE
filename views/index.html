@@ -46,25 +46,25 @@
     <main class="main">
 
         <section class="search">
-            <form class="search__form" action="">
+            <form class="search__form" id="reservation-form">
                 <div class="search__fields">
                     <datalist id="origen">
                         <option value="Lima"></option>
                         <option value="Chimbote"></option>
                     </datalist>
-                    <input class="search__input" list="origen" name="origen" placeholder="Origen"></input>
-
+                    <input class="search__input" list="origen" id="input-origen" name="origen" placeholder="Origen" required>
+        
                     <datalist id="destino">
                         <option value="Lima"></option>
                         <option value="Chimbote"></option>
                     </datalist>
-                    <input class="search__input" list="destino" placeholder="Destino">
-
-                    <input class="search__input" type="date">
+                    <input class="search__input" list="destino" id="input-destino" placeholder="Destino" required>
+        
+                    <input class="search__input" type="date" id="input-fecha" required>
                     <button class="search__button" type="submit">Buscar</button>
                 </div>
             </form>
-        </section>
+        </section>        
 
         <section id="review" class="review">
             <h2 class="review__title">Reseñas de nuestros clientes</h2>
