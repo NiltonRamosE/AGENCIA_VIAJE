@@ -14,7 +14,6 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: #0e5d0e;
   color: white;
 }
 
@@ -22,6 +21,9 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
+  position: fixed;
+  background-color: #0e5d0e;
+  width: 100%;
 }
 
 .header__toggle {
@@ -170,7 +172,6 @@ body {
   font-style: italic;
   color: #777;
 }
-
 
 /* About Section Styles */
 .about {
@@ -369,11 +370,6 @@ body {
 .footer__link:hover {
   color: #cce8cc;
 }
-
-@media (max-width: 768px) {
-  
-}
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
